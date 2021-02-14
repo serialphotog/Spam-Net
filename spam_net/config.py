@@ -10,6 +10,7 @@ load_dotenv(dotenv_path=env_path)
 
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY", "DEFAULT_KEY")
+    SECURITY_PASSWORD_SALT = os.getenv("SECURITY_PASSWORD_SALT", "DEFAULT_SALT")
     PRESERVE_CONTEXT_ON_EXCEPTION = False
 
     # Database
